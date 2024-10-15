@@ -4,7 +4,7 @@ import ICxRP from "../../assets/ICxRP.png";
 import DKSoft from "../../assets/DKSoft.png";
 import ICC from "../../assets/iccanada.png";
 import Etaii from "../../assets/et.png";
-import './Experiences.css';
+import './experiences.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';

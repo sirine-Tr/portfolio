@@ -1,0 +1,136 @@
+.card-grid-Experiance {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin: 5%;
+    border: none;
+    position: relative;
+    
+}
+
+.experience-card {
+    border: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    width: 45%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.experience-card-left {
+    align-self: flex-start;
+}
+
+.experience-card-right {
+    align-self: flex-end;
+}
+
+.experience-card::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #EF7A22; 
+    top: 100%;
+    left: 50%; 
+    height: 40px; 
+    z-index: -1; 
+}
+
+.experience-card:last-child::after {
+    display: none; 
+}
+
+.experience-card::before {
+    content: "";
+    position: absolute;
+    width: 490px; 
+    background-color: #EF7A22; 
+    top: 100%; 
+    left: 90%; 
+    transform: translateX(-50%); 
+    height: 2px; 
+    z-index: -1; 
+}
+
+.experience-card:not(:last-child)::before {
+    top: calc(100% + 40px); 
+}
+
+.experience-card:last-child::before {
+    display: none; 
+}
+.experience-card-right::before {
+    left: 100%; 
+    transform: translateX(-162%); 
+}
+
+.experience-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.experience-card img {
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.experience-company-title {
+    flex-grow: 1;
+}
+
+.experience-dates {
+    text-align: right;
+    color: #EF7A22;
+}
+
+.experience-post {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experience-post-icon {
+    color: #EF7A22;
+}
+
+.experience-description {
+    font-size: medium;
+    font-weight: 100;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.experience-stacks {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #EF7A22;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .card-grid-Experiance {
+        flex-direction: column; 
+    }
+
+    .experience-card {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    
+    .experience-card::after,
+    .experience-card::before {
+        display: none; 
+    }
+}

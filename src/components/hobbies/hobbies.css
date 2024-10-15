@@ -1,0 +1,32 @@
+.hobbies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.hobbies-column {
+    flex: 1;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.hobby-icon {
+    color: #EF7A22; 
+    font-size: 2rem;
+    margin-bottom: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .hobbies {
+        flex-direction: column; 
+        height: auto; 
+        align-items: center; 
+    }
+
+    .hobbies-column {
+        margin-bottom: 20px; 
+        width: 100%;
+    }
+}

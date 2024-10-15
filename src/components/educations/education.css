@@ -1,0 +1,118 @@
+.card-grid-education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10%;
+    border: none;
+}
+
+.education-card {
+    border: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    border-radius: 15px 50px;
+}
+
+.education-card-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.education-card-header img {
+    width: 100px;
+    height: 65px;
+}
+
+.education-institute {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.education-dates {
+    text-align: right;
+    color: #EF7A22;
+}
+
+.education-specialty {
+    font-size: medium;
+    font-weight: 100;
+    line-height: 1.6;
+    text-align: justify;
+    margin-left: 9%;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card-grid-education {
+        margin: 5%;
+        gap: 15px;
+    }
+
+    .education-card {
+        padding: 15px;
+        border-radius: 10px 40px;
+    }
+
+    .education-card-header img {
+        width: 80px;
+        height: 55px;
+    }
+
+    .education-specialty {
+        font-size: small;
+        margin-left: 5%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-grid-education {
+        margin: 3%;
+        gap: 10px;
+    }
+
+    .education-card {
+        padding: 10px;
+        border-radius: 10px 30px;
+    }
+
+    .education-card-header img {
+        width: 60px;
+        height: 45px;
+    }
+
+    .education-specialty {
+        font-size: smaller;
+        margin-left: 0;
+    }
+
+    .education-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education-dates {
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+}
